@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Test-Automation config</comment>
+    <entry key="BaseUrl">(Your URL Here)</entry>
+    <!--credentials to send email-->
+    <entry key="emailId">(Email sender Here)</entry>
+    <entry key="passwordEmail">(password to be given)</entry>
+    <entry key="emailSentTo">(Email id  to send email )</entry>
+
+    <!--Valid Credentials-->
+    <entry key="validUserName">(ujjwal)</entry>
+    <entry key="validPassword">FbDhp7h9G3U=YWJjZGVm</entry>
+    <entry key="domain">test70</entry>
+    <entry key="mainPageUrl">https:{URL}/v70/#!/main</entry>
+
+    <!--InvalidCredentials-->
+    <entry key="InvalidUserName">invalid</entry>
+    <entry key="InvalidPassword">invalid</entry>
+    <entry key="domain">test70</entry>
+    <entry key="invalidLoginError">Username, password or domain is incorrect. Please enter valid credentials and try
+        again
+    </entry>
+
+    <!--Blank UserName and Password-->
+    <entry key="blankUserPassErrorMsg">One or more fields are empty or incorrect. Click on red label for more detail.
+    </entry>
+
+    <!--File Names For Screen Shots-->
+    <entry key="smartflowLogo">smartFlowLogo</entry>
+
+    <!--English Language Test Data-->
+    <entry key="language_English">English (United States)</entry>
+    <entry key="labelUsername_English">Username</entry>
+    <entry key="labelPassword_English">Password</entry>
+    <entry key="labelDomain_English">Domain name</entry>
+    <entry key="labelLanguage_English">Language</entry>
+    <entry key="labelRememberMe_English">Remember me</entry>
+
+    <!--Dutch Language Test Data-->
+    <entry key="language_Dutch">Dutch (Netherlands)</entry>
+    <entry key="labelUsername_Dutch">Gebruikersnaam</entry>
+    <entry key="labelPassword_Dutch">Wachtwoord</entry>
+    <entry key="labelDomain_Dutch">Domeinnaam</entry>
+    <entry key="labelLanguage_Dutch">Taal</entry>
+    <entry key="labelRememberMe_Dutch">Onthoud mij</entry>
+
+    <!--setting section data-->
+    <entry key="settings_login">Login</entry>
+    <entry key="settings_diagnostics">Diagnostics</entry>
+    <entry key="settings_info">Information</entry>
+
+    <!--settings Login section data-->
+    <entry key="ask_support">Ask for support</entry>
+    <entry key="clear_Cache_Attribute">Clear application cache</entry>
+
+    <!--Settings->Info->Details-->
+    <entry key="app_Name">Application Name SmartFlow</entry>
+    <entry key="app_Version">Application Version 7.0.67</entry>
+    <entry key="formGroup">Algemeen</entry>
+    <entry key="templateName">Automation Test Template I</entry>
+
+    <!--NewForm Templates Detail-->
+    <entry key="TextTest">TestingTextData</entry>
+    <entry key="NumericTest">6</entry>
+    <entry key="Radio">Radio4</entry>
+    <entry key="OptionValue">Option2</entry>
+    <entry key="CheckValue">NOK</entry>
+    <entry key="FormStatus">Open</entry>
+
+    <!--media with url-->
+    <entry key="mediaUrl">https://www.youtube.com/</entry>
+    <entry key="imageValidationData">data:image</entry>
+    <entry key="buttonValidationData">working</entry>
+    <entry key="NavigateUrl">https://www.google.com/maps</entry>
+    <entry key="htmlVAlidationData">html control validation</entry>
+    <entry key="childFormName">Werkbon</entry>
+
+    <!--Data Control Types-->
+    <entry key="Call">map</entry>
+    <entry key="Navigate">navigate</entry>
+    <entry key="Link">link</entry>
+
+    <!--Download Path-->
+    <entry key="downloadPDFpath">C:\Users\ith\Downloads</entry>
+
+    <!--Maintenance page-->
+    <entry key="domainSettingsUrl">domain-portal</entry>
+    <entry key="domainWizardURL">domain-wizard</entry>
+    <entry key="bulletinsURL">bulletin-builder</entry>
+    <entry key="KnowledgeBaseURL">knowledge-base-builder</entry>
+    <entry key="UsersURL">user</entry>
+    <entry key="RolesURL">role</entry>
+    <entry key="accRights">access-label</entry>
+    <entry key="logbook">log-book</entry>
+    <entry key="queue">queue</entry>
+    <entry key="translations">translation</entry>
+    <entry key="downlaodcenter">download-center</entry>
+    <entry key="supportPage">support-message</entry>
+    <entry key="themebuilder">theme-list</entry>
+
+    <!--DOMAIN SETTINGS PAGE DATA-->
+    <entry key="domainSettingsHeading">Domain Test70</entry>
+    <entry key="doaminWizardHeading">Domain wizard</entry>
+    <entry key="bulletinsHeading">Bulletin board list</entry>
+    <entry key="knowledgeBaseHeading">Knowledge base item list</entry>
+    <entry key="usersHeading">Users</entry>
+    
+    <entry key="accessRightHeading">Access label</entry>
+    <entry key="rolePageHeading">Roles</entry>
+    <entry key="translatinsHeading">Translations</entry>
+    <entry key="queueHeading">Queue</entry>
+
+    <entry key="logBookHeading">Log info</entry>
+
+
+    
+</properties>

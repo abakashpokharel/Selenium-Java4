@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Test-Automation config</comment>
+
+    <entry key="BaseUrl">(Your URL here)</entry>
+    <entry key="HomePage">main.aspx</entry>
+    <entry key="OpeningPage">bulletins.aspx</entry>
+
+    <!-- Domain Test Combinations -->
+    <entry key="ValidDomain">demo</entry>
+    <entry key="InvalidDomainName">InvalidDomain</entry>
+    <entry key="SpecialCharacter">#@$%$</entry>
+
+    <!-- Login Test Combinations -->
+    <entry key="ValidUserName">UserName</entry>
+    <entry key="ValidPassword">password</entry>
+
+    <entry key="InvalidUserName">UserInvalid</entry>
+    <entry key="InvalidPassword">vqgztA7vzds=c2ZSdWxlJDE3</entry>
+
+    <entry key="InvalidUserName">UserInvalid</entry>
+    <entry key="ValidPassword">vqgztA7vzds=c2ZSdWxlJDE3</entry>
+
+    <entry key="ValidUserName">validUserName</entry>
+    <entry key="InvalidPassword">PassInvalid</entry>
+
+    <entry key="Language">EN</entry>
+    <entry key="RememberMe">No</entry>
+
+    <!-- User Status Test Cases -->
+    <entry key="UserStatusTitle">User Status</entry>
+    <entry key="ChangeUserStatus">No</entry>
+    <entry key="NewUserStatus"></entry>
+
+    <!-- Knowledge Base Test Cases -->
+    <entry key="KnowledgeBasePageName">knowledgeBase.aspx</entry>
+    <entry key="KnowledgeBaseTitle">Knowledge Base</entry>
+
+    <!-- Support Message Test Cases -->
+    <entry key="SupportMessagePageName">support.aspx</entry>
+    <entry key="SupportMessageTitle">Support message</entry>
+
+    <!-- Messages Test Cases -->
+    <entry key="MessagesPageName">messages.aspx</entry>
+    <entry key="MessagesTitle">Message list</entry>
+
+</properties>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="R7 Automation Suite" parallel="tests">
+    <parameter name="configFile" value="R7-test-data.xml"/>
+    <parameter name="HubUrl" value="http://192.168.200.26:4444/wd/hub"/>
+    <listeners>
+        <listener class-name="tests.WebDriverListener"></listener>
+        <listener class-name="tests.utils.Listener.ListenerClass"></listener>
+        <listener class-name="tests.utils.Listener.AnnotationTransformer"></listener>
+    </listeners>
+
+    <!--LOGIN COMBINATION TEST-->
+    <test name="LOGIN (Combinations) TEST" thread-count="4" verbose="2" parallel="methods">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="tests.LoginTest.LoginTest">
+                <methods>
+                    <exclude name="test_For_Valid_Username_And_Password"/>
+                    <exclude name="test_For_Invalid_Username_And_Password"/>
+                    <exclude name="test_For_Blank_Username_And_Valid_Password"/>
+                    <exclude name="test_For_Blank_Username_And_Blank_Password"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--FORM TEST-->
+    <test name="FORM TEST" thread-count="1" parallel="methods" verbose="2">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="platform" value="WIN10"/>
+        <classes>
+            <class name="tests.FormDetailPageTest.FormDetailPageTest">
+                <methods>
+                    <exclude name="fillingFormTemplate"/>
+                    <include name="validateTemplate"/>
+                    <exclude name="testToVerifyPDFdownload"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--LOGIN PAGE TEST-->
+    <test name="LOGIN PAGE TEST" verbose="2" parallel="methods" thread-count="5">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="platform" value="WIN10"/>
+        <classes>
+            <class name="tests.LoginTest.LoginPageTest">
+                <methods>
+                    <exclude name="test_To_Verify_Logo"/>
+                    <exclude name="test_To_Verify_If_Setting_Icon_Is_Present_Or_Not"/>
+                    <exclude name="test_To_Verify_Language_Selector_English"/>
+                    <exclude name="test_To_Verify_Language_Selector_Dutch"/>
+                    <exclude name="test_to_see_if_setting_section_is_seen"/>
+                    <exclude name="test_for_Settings_Login_Section"/>
+                    <exclude name="test_for_Settings_Diagnostic_Section"/>
+                    <exclude name="test_for_Settings_Info_Section"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--MAINTENANCE PAGE TEST-->
+    <test name="MAINTENANCE PAGE TEST" thread-count="13" parallel="methods" verbose="2">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="platform" value="WIN10"/>
+        <classes>
+            <class name="tests.maintenancePageTest.MaintenancePageBasicTest">
+                <methods>
+                    <exclude name="test_to_See_If_Domain_Setting_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_Domain_Wizard_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_Bulletins_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_KnowledgeBase_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_Users_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_Roles_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_AccessRights_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_Translations_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_Queue_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_LogBook_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_DownloadCenter_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_Support_Page_Opens_Without_Error"/>
+                    <exclude name="test_to_See_If_ThemeBuilder_Page_Opens_Without_Error"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
