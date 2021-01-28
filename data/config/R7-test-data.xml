@@ -9,7 +9,7 @@
     <entry key="emailSentTo">(Email id  to send email )</entry>
 
     <!--Valid Credentials-->
-    <entry key="validUserName">(ujjwal)</entry>
+    <entry key="validUserName">(abakash)</entry>
     <entry key="validPassword">FbDhp7h9G3U=YWJjZGVm</entry>
     <entry key="domain">test70</entry>
     <entry key="mainPageUrl">https:{URL}/v70/#!/main</entry>
@@ -28,6 +28,7 @@
 
     <!--File Names For Screen Shots-->
     <entry key="smartflowLogo">smartFlowLogo</entry>
+    <entry key ="newData">abakashNewData</entry>
 
     <!--English Language Test Data-->
     <entry key="language_English">English (United States)</entry>
